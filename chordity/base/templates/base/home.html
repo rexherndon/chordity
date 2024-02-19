@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        {% extends 'main.html' %}
+
+        {% block content %}
+        <h1>Home Template</h1>
+
+        <div>
+            {% for room in rooms %}
+                <div>
+                    <h5>{{room.id}} -- <a href="{% url 'room' room.id %}">{{room.name}}</a></h5>
+                </div>
+
+
+            {% endfor %}
+        </div>
+        
+        {% endblock content %}
+    
+    </body>
+</html>
