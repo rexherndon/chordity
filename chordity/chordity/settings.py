@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     "corsheaders",
 ]
 
+# custom user model here
+AUTH_USER_MODEL = "base.User"
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "corsheaders.middleware.CorsMiddleware",
@@ -120,8 +123,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "/static/"
+MEDIA_URL = "/images/"
 
 STATICFILES_DIRS = [BASE_DIR / "static"]
+
+# might want to change this when you're in your official production env to something like AWS
+MEDIA_ROOT = BASE_DIR / "static/images"
 
 # STATIC_ROOT =
 
