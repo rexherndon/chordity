@@ -226,3 +226,6 @@ def activityPage(request):
 
     context = {"room_messages": room_messages}
     return render(request, "base/activity.html", context)
+
+def termsAndConditionsPage(request):
+    return render(request, "base/terms_and_conditions.html")
