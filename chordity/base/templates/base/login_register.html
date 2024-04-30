@@ -71,9 +71,9 @@
         </div>
       </div>
       <div class="layout__body">
-        <h2 class="auth__tagline">
+        {% comment %} <h2 class="auth__tagline">
           Join other musicians to discover your next big sound!
-        </h2>
+        </h2> {% endcomment %}
 
         <form class="form" action="" method="POST">
           {% csrf_token %} {% for field in form %}
