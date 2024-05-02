@@ -1,4 +1,4 @@
-# Chordity (Ver. 1.0)
+# Chordity (Ver. 1.1)
 
 ---
 
@@ -18,17 +18,21 @@ As of right now, here’s an overview on what I’ve created during the past few
     - Created basic Django REST API (no official documentation so far, but it is only equipped with a few different functions at the moment. If running locally, can be found at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/) or a similar URL).
     - Currently using SQLite DB architecture, and there are no plans of changing this at this time.
     - Currently using default Django admin console for superusers - also no plans of changing this at this time.
-- Ver 1.1 and Ver 1.# - TBD
-    - Some minor bugs with how some page elements are displayed or how certain pages redirect are still being looked into.
-    - Need to add terms of service/use page (and other related pages per Dr. Jennex’s consultation).
-    - More features as needed based on consultations with Dr. Zhang and Dr. Sen.
+    - CSRF protection added via CSRF tokens on all forms. See this [https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/web_application_security](link) for more info on Django security features.
+- Ver 1.1 - Released on 5/1/2024
+    - Several minor bugs with dynamic rendering and styling have been addressed.
+    - Added terms and conditions page, and a link to it on the user registration page.
+    - Anonymous user survey page added, can be accessible from the navbar once signed in.
+    - Updated color pallete.
+    - Restrictions added on Chordity API.
+- Ver 1.2 and beyond (TBD)
     - Potential identity framework integration.
     - Adding “favorite genre”, “pronouns” and “spotlight link” (links to music profiles, websites, etc.) to custom user model.
     - More development on REST API.
     - Hooktheory chord builder and API integration ([https://www.hooktheory.com/api/trends/docs](https://www.hooktheory.com/api/trends/docs)).
         - Intended to be a separate portion of the website, but I would ideally like to add this to the posts/profiles as well.
     - Acquire official domain and hosting (and potential file storage hosting through AWS or a similar service).
-    - Potential contact email for inquiries?
+    - Potential contact email for inquiries
 
 This application is still in development, but is intended to be the prototype for my final project in my M.S. Computer Information Systems and Business Analytics Capstone Course (MS CISBA). If you have any questions or inquiries about this application, please feel free to email me at [herndonrex1@gmail.com](mailto:herndonrex1@gmail.com).
 
