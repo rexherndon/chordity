@@ -25,7 +25,7 @@ As of right now, here’s an overview on what I’ve created during the past few
     - Anonymous user survey page added, can be accessible from the navbar once signed in.
     - Updated color pallete.
     - Restrictions added on Chordity API.
-- Ver 1.2 and beyond (TBD)
+- Ver 1.2 and beyond - (TBD)
     - Potential identity framework integration.
     - Adding “favorite genre”, “pronouns” and “spotlight link” (links to music profiles, websites, etc.) to custom user model.
     - More development on REST API.
