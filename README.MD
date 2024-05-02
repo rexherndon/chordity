@@ -18,7 +18,7 @@ As of right now, here’s an overview on what I’ve created during the past few
     - Created basic Django REST API (no official documentation so far, but it is only equipped with a few different functions at the moment. If running locally, can be found at [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/) or a similar URL).
     - Currently using SQLite DB architecture, and there are no plans of changing this at this time.
     - Currently using default Django admin console for superusers - also no plans of changing this at this time.
-    - CSRF protection added via CSRF tokens on all forms. See this [https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/web_application_security](link) for more info on Django security features.
+    - CSRF protection added via CSRF tokens on all forms. See this [link](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/web_application_security) for more info on Django security features.
 - Ver 1.1 - Released on 5/1/2024
     - Several minor bugs with dynamic rendering and styling have been addressed.
     - Added terms and conditions page, and a link to it on the user registration page.
