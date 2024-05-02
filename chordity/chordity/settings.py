@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-1%d+om*5rwf_4ahz8av19y+6$qc&dmt1%#j#&%-xc)k#=nlgh1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -74,7 +74,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "chordity.wsgi.application"
+WSGI_APPLICATION = "chordity.wsgi.app"
+# WSGI_APPLICATION = "chordity.wsgi.application"
 
 
 # Database
