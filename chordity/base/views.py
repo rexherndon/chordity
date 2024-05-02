@@ -8,16 +8,10 @@ from django.db.models import Q
 from django.contrib.auth import authenticate, login, logout
 
 # from django.contrib.auth.forms import UserCreationForm
-from .models import Room, Topic, Message, User
-from .forms import RoomForm, UserForm, MyUserCreationForm
+from .models import Room, Topic, Message, User, Survey
+from .forms import RoomForm, UserForm, MyUserCreationForm, SurveyForm
 
 # Create your views here.
-
-# rooms = [
-#     {'id':1, 'name':'Major or minor?'},
-#     {'id':2, 'name':'Looking for R&B Artists'},
-#     {'id':3, 'name':'Most common keys in pop?'},
-# ]
 
 
 def loginPage(request):
@@ -227,5 +221,23 @@ def activityPage(request):
     context = {"room_messages": room_messages}
     return render(request, "base/activity.html", context)
 
+
 def termsAndConditionsPage(request):
     return render(request, "base/terms_and_conditions.html")
+
+
+def surveyPage(request):
+    form = SurveyForm()
+
+    if request.method == "POST":
+        form = SurveyForm(request.POST)
+        if form.is_valid():
+            survey = form.save(commit=False)
+            survey.save()
+            return redirect("home")
+        else:
+            messages.error(
+                request, "An error has occured. Please try again."
+            )
+
+    return render(request, "base/survey.html", {"form": form})

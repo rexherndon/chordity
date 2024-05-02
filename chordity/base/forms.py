@@ -2,7 +2,7 @@ from django.forms import ModelForm
 
 # from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from .models import Room, User
+from .models import Room, User, Survey
 
 
 class MyUserCreationForm(UserCreationForm):
@@ -23,3 +23,9 @@ class UserForm(ModelForm):
     class Meta:
         model = User
         fields = ["avatar", "name", "username", "email", "bio"]
+        
+        
+class SurveyForm(ModelForm):
+    class Meta:
+        model = Survey
+        fields = ["q1", "q2"]

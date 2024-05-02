@@ -1,13 +1,8 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
-
-# room and message is a one to many relationship
-# one room can have many messages but one message belongs to only one room
-
-# topic and room is also a one to many relationship
-# a topic can have multiple rooms, while a room can only have one topic
 
 class User(AbstractUser):
     name = models.CharField(max_length=200, null=True)
@@ -65,3 +60,20 @@ class Message(models.Model):
     # unneeded boilerplate?
     # def get_absolute_url(self):
     #     return reverse("_detail", kwargs={"pk": self.pk})
+    
+
+# survey
+# id - auto generated
+
+class Survey(models.Model):
+    
+    # on a scale from 1 to 5, how much do you like this app?
+    q1 = models.IntegerField(
+        validators=[
+            MaxValueValidator(5),
+            MinValueValidator(1)
+        ]
+    )
+    # do you want to provide any additional comments or feedback to help improve the application?
+    q2 = models.TextField()
+    
