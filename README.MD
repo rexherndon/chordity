@@ -1,4 +1,5 @@
-# Chordity (Ver. 1.1)
+# Chordity (Ver. 1.2)
+[https://chordity.onrender.com/](https://chordity.onrender.com/)
 
 ---
 
@@ -25,14 +26,18 @@ As of right now, here’s an overview on what I’ve created during the past few
     - Anonymous user survey page added, can be accessible from the navbar once signed in.
     - Updated color pallete.
     - Restrictions added on Chordity API.
-- Ver 1.2 and beyond - (TBD)
+- Ver 1.2 - Released on 5/2/2024
+    - Added AWS S3 bucket integration for static files.
+    - Upgraded database from MySQL to PostgreSQL.
+    - Added environment variables, turned off debugging features, and added security features for production deployment.
+    - Deployed website and started metric integration using Render [https://chordity.onrender.com/](https://chordity.onrender.com/).
+- Ver 1.3 and beyond - (TBD)
     - Potential identity framework integration.
     - Adding “favorite genre”, “pronouns” and “spotlight link” (links to music profiles, websites, etc.) to custom user model.
     - More development on REST API.
     - Hooktheory chord builder and API integration ([https://www.hooktheory.com/api/trends/docs](https://www.hooktheory.com/api/trends/docs)).
         - Intended to be a separate portion of the website, but I would ideally like to add this to the posts/profiles as well.
-    - Acquire official domain and hosting (and potential file storage hosting through AWS or a similar service).
-    - Potential contact email for inquiries
+    - Potential contact email for inquiries.
 
 This application is still in development, but is intended to be the prototype for my final project in my M.S. Computer Information Systems and Business Analytics Capstone Course (MS CISBA). If you have any questions or inquiries about this application, please feel free to email me at [herndonrex1@gmail.com](mailto:herndonrex1@gmail.com).
 
