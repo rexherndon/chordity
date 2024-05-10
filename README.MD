@@ -5,6 +5,8 @@
 
 **Welcome to Chordity - a web based chat platform focused around connecting musicians and collaborating together to inspire and kickstart new tracks!**
 
+With Chordity, you can create an account to make chat rooms or talk to people in existing ones. You can filter by a certain topic, search for specific posts, or see what other users are up to with the "Recent Activity" feed! There's also an anonymous survey you can fill out to give us feedback and ideas on how to improve the app!
+
 As of right now, here’s an overview on what I’ve created during the past few months of development, and here’s the general roadmap for what I plan to work on in future releases.
 
 - Ver. 1.0 - Released on 4/2/2024
