@@ -1,6 +1,8 @@
 # Chordity (Ver. 1.2)
 [https://chordity.onrender.com/](https://chordity.onrender.com/)
+DE
 
+**UPDATE:** This project is no longer accessible from the link above, but a link to the video presentation showcasing this project can be found here [https://www.youtube.com/watch?v=5GYGTrb_7XI](https://www.youtube.com/watch?v=5GYGTrb_7XI)
 ---
 
 **Welcome to Chordity - a web based chat platform focused around connecting musicians and collaborating together to inspire and kickstart new tracks!**
