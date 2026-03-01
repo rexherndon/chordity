@@ -3,7 +3,7 @@
 
 ---
 
-UPDATE: This project is no longer accessible from the link above, but a link to the video presentation showcasing this project can be found [here](https://youtu.be/WyVHIFitOOE).
+**UPDATE**: This project is no longer accessible from the link above, but a link to the video presentation showcasing this project can be found [here](https://youtu.be/WyVHIFitOOE).
 
 **Welcome to Chordity - a web based chat platform focused around connecting musicians and collaborating together to inspire and kickstart new tracks!**
 
